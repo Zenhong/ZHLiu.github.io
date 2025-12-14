@@ -1,13 +1,321 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhenghong (Z) Liu | Unity Developer</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* Skills Tags */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #334155;
+        }
+
+        /* Experience Cards */
+        .job-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1px solid #334155;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .company {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .dates {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Project Links */
+        .project-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .job-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my resume and portfolio website.</p>
-    <ul>
-        <li><a href="https://linkedin.com">My LinkedIn</a></li>
-    </ul>
+
+    <div class="container">
+        <header>
+            <h1>Zhenghong (Z) Liu</h1>
+            <div class="subtitle">Senior Unity Developer | AR/VR Specialist | 10+ Years Experience</div>
+            <div class="contact-info">
+                <a href="mailto:gilbert.liu@rocketmail.com">✉️ gilbert.liu@rocketmail.com</a>
+                <a href="tel:705-499-5439">📞 705-499-5439</a>
+                <a href="https://www.linkedin.com/in/zhenghongliu191313" target="_blank">🔗 LinkedIn Profile</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p style="color: var(--text-secondary);">
+                Results-driven and self-motivated Unity3D developer with 10+ years of experience in AR/VR development, multiplayer systems, and AI-integrated XR solutions. 
+                Specialized in performance-optimized gameplay systems, building large-scale simulations using A* pathfinding, Job System, and spatial hashing. 
+                Successfully shipped high-profile projects including Vegas Infinite (formerly PokerStars VR) and multiple AR/VR titles for Fortune 500 clients.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Unity3D</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Apple Vision Pro</span>
+                <span class="skill-tag">Multiplayer (Photon/PUN 2/Fusion/Mirror)</span>
+                <span class="skill-tag">VR (Oculus Quest/XR Interaction Toolkit)</span>
+                <span class="skill-tag">AR (ARCore/ARKit/Vuforia)</span>
+                <span class="skill-tag">AI Pathfinding (A*)</span>
+                <span class="skill-tag">Swift & XCode</span>
+                <span class="skill-tag">OpenCV</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Lead Developer & Founder</span>
+                        <br>
+                        <span class="company">Independent XR & AI Projects</span>
+                    </div>
+                    <span class="dates">July 2024 - Present</span>
+                </div>
+                <ul>
+                    <li><strong>AI+XR Integration:</strong> Developed educational tools enabling users to interact with ChatGPT through a fully animated AI avatar in Augmented Reality[cite: 21, 22].</li>
+                    <li><strong>RTS Prototype:</strong> Designed a game supporting thousands of active units using A* pathfinding and RVO for crowd navigation[cite: 24, 25].</li>
+                    <li><strong>Performance Optimization:</strong> Utilized GPU-based animation, Unity's Job System, and spatial hashing for multithreaded execution and scalability[cite: 26, 27].</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Software Engineer</span>
+                        <br>
+                        <span class="company">Lucky VR Inc (Remote)</span>
+                    </div>
+                    <span class="dates">Mar 2022 - July 2024</span>
+                </div>
+                <ul>
+                    <li><strong>Vegas Infinite (PokerStars VR):</strong> Delivered key features including the tutorial system, player suite, spin wheel, and new PLO Poker game mode[cite: 28, 29, 30].</li>
+                    <li><strong>Multiplayer Systems:</strong> Worked with Photon Network to deliver high-performance multiplayer experiences optimized for low latency[cite: 52].</li>
+                    <li><strong>Apple Vision Pro:</strong> Developed a prototype demo showcasing advanced VR capabilities for new clients[cite: 31].</li>
+                    <li><strong>Avatar System:</strong> Contributed to a new avatar system improving user customization and engagement[cite: 32].</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">AR/VR Software Engineer</span>
+                        <br>
+                        <span class="company">CGS Canada</span>
+                    </div>
+                    <span class="dates">Dec 2019 - Mar 2022</span>
+                </div>
+                <ul>
+                    <li><strong>Red Cross Medical VR:</strong> Built a multiplayer training simulation for blood collection procedures, allowing instructors and students to observe and communicate in VR[cite: 53, 54, 55].</li>
+                    <li><strong>AR Web Editor:</strong> Designed a multi-platform tool similar to Apple Reality Composer, allowing users to create, save, and visualize AR scenes via cloud serialization[cite: 57, 58, 59].</li>
+                    <li><strong>Client Solutions:</strong> Rapidly developed R&D MVPs including Toshiba AR, Teamwork AR, and Cloud AR Editor[cite: 35].</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Augmented Reality Unity Developer</span>
+                        <br>
+                        <span class="company">KP9 Interactive</span>
+                    </div>
+                    <span class="dates">Oct 2018 - June 2019</span>
+                </div>
+                <ul>
+                    <li><strong>WorldCast AR:</strong> Created an app with real-time maps, image recognition, and GLTF model loading[cite: 62, 63].</li>
+                    <li><strong>FloorCast AR:</strong> Implemented SLAM technology for high-precision floor plan visualization and real-time area calculation[cite: 71, 72, 73].</li>
+                    <li><strong>ExplorAR:</strong> Developed 3D map navigation using Google Maps API[cite: 76, 77].</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Game Programmer</span>
+                        <br>
+                        <span class="company">Budge Studio</span>
+                    </div>
+                    <span class="dates">July 2018 - Sept 2018</span>
+                </div>
+                <ul>
+                    <li><strong>Transformer: BumbleBee:</strong> Contributed to core gameplay mechanics and managed asset integration for menus and popups[cite: 40, 43].</li>
+                    <li>Implemented in-game monetization UIs and player performance tracking[cite: 86, 87].</li>
+                </ul>
+            </div>
+            
+             <div class="job-card">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Game Programmer</span>
+                        <br>
+                        <span class="company">3D Internet</span>
+                    </div>
+                    <span class="dates">Aug 2017 - Jan 2018</span>
+                </div>
+                <ul>
+                    <li>Developed 3D virtual training for ComEd regarding high-voltage circuit wiring[cite: 46].</li>
+                    <li>Wrote main project logic and set up animations for realistic training scenarios[cite: 47].</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="job-card">
+                <div class="job-header">
+                    <span class="job-title">Bachelor of Science, Computing Science</span>
+                    <span class="dates">Graduated June 2017</span>
+                </div>
+                <div class="company">University of Alberta</div>
+                <div style="color: var(--text-secondary); margin-top: 5px;">
+                    Minor in History • Certificate in Video Game Development
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p style="text-align: center; color: var(--text-secondary); font-size: 0.8rem;">
+                &copy; 2025 Zhenghong (Z) Liu. Hosted on GitHub Pages.
+            </p>
+        </footer>
+    </div>
+
 </body>
 </html>
